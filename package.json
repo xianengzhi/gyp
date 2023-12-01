@@ -1,0 +1,26 @@
+{
+  "name": "gyp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/type.d.ts",
+  "files": [
+    "binding.gyp",
+    "src/*.cc",
+    "lib/**"
+  ],
+  "scripts": {
+    "install": "node-gyp rebuild --release",
+    "ts": "ts-node test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^7.0.0",
+    "node-gyp": "^10.0.1",
+    "node-gyp-build": "^4.7.1",
+    "ts-node": "^10.9.1"
+  }
+}
